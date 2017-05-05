@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'multi_json'
 
 describe OmniAuth::Strategies::JWT do
   let(:response_json){ MultiJson.load(last_response.body) }
